@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane focusTraversable="true" maxHeight="-Infinity"
+	maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity"
+	prefHeight="670.0" prefWidth="800.0"
+	style="-fx-background-color: #0b0c10;"
+	xmlns="http://javafx.com/javafx/20.0.1"
+	xmlns:fx="http://javafx.com/fxml/1"
+	fx:controller="application.CompareController">
+	<children>
+		<AnchorPane layoutY="123.0" prefHeight="548.0"
+			prefWidth="148.0" style="-fx-background-color: #1f2833;">
+			<children>
+				<Hyperlink fx:id="reviews" focusTraversable="false"
+					layoutY="474.0" onAction="#reviewScene"
+					styleClass="hyperlink-no-underline" text="Reviews"
+					textFill="#66fcf1">
+					<font>
+						<Font name="System Bold" size="16.0" />
+					</font>
+				</Hyperlink>
+				<Hyperlink fx:id="aboutUs" focusTraversable="false"
+					layoutY="508.0" onAction="#infoAboutUs"
+					styleClass="hyperlink-no-underline" text="Info About Us"
+					textFill="#66fcf1">
+					<font>
+						<Font name="System Bold" size="16.0" />
+					</font>
+				</Hyperlink>
+				<ImageView fitHeight="44.0" fitWidth="38.0" layoutX="6.0"
+					layoutY="46.0" pickOnBounds="true" preserveRatio="true">
+					<image>
+						<Image url="@Images/home-removebg-preview.png" />
+					</image>
+				</ImageView>
+				<Hyperlink fx:id="home" focusTraversable="false"
+					layoutX="58.0" layoutY="48.0" onAction="#homeScene"
+					prefHeight="35.0" prefWidth="70.0" text="Home" textFill="#c5c6c7">
+					<font>
+						<Font size="20.0" />
+					</font>
+				</Hyperlink>
+				<ImageView fitHeight="44.0" fitWidth="35.0" layoutX="7.0"
+					layoutY="130.0" pickOnBounds="true" preserveRatio="true">
+					<image>
+						<Image url="@Images/add-user.png" />
+					</image>
+				</ImageView>
+				<Hyperlink fx:id="add" focusTraversable="false"
+					layoutX="58.0" layoutY="134.0" onAction="#addAccount"
+					prefHeight="35.0" prefWidth="70.0" text="Add " textFill="#c5c6c7">
+					<font>
+						<Font size="20.0" />
+					</font>
+				</Hyperlink>
+				<ImageView fitHeight="44.0" fitWidth="35.0" layoutX="7.0"
+					layoutY="214.0" pickOnBounds="true" preserveRatio="true">
+					<image>
+						<Image url="@Images/user.png" />
+					</image>
+				</ImageView>
+				<Hyperlink fx:id="login" focusTraversable="false"
+					layoutX="58.0" layoutY="217.0" onAction="#loginScene"
+					prefHeight="35.0" prefWidth="70.0" text="Login" textFill="#c5c6c7">
+					<font>
+						<Font size="20.0" />
+					</font>
+				</Hyperlink>
+				<ImageView fitHeight="44.0" fitWidth="35.0" layoutX="12.0"
+					layoutY="301.0" pickOnBounds="true" preserveRatio="true">
+					<image>
+						<Image url="@Images/logout%20-%20Copy.png" />
+					</image>
+				</ImageView>
+				<Hyperlink fx:id="logout" focusTraversable="false"
+					layoutX="58.0" layoutY="300.0" onAction="#mainScene"
+					prefHeight="38.0" prefWidth="78.0" text="Logout" textFill="#c5c6c7">
+					<font>
+						<Font size="20.0" />
+					</font>
+				</Hyperlink>
+			</children>
+		</AnchorPane>
+		<Label layoutX="259.0" layoutY="45.0" text="Laptop Comparison "
+			textFill="#12ffeb">
+			<font>
+				<Font name="Verdana Bold" size="36.0" />
+			</font>
+		</Label>
+		<Label layoutX="225.0" layoutY="152.0" prefHeight="18.0"
+			prefWidth="200.0" text="Product 1" textAlignment="CENTER"
+			textFill="#c5c6c7">
+			<font>
+				<Font name="Algerian" size="37.0" />
+			</font>
+		</Label>
+		<Label layoutX="568.0" layoutY="152.0" prefHeight="18.0"
+			prefWidth="200.0" text="Product 2" textAlignment="CENTER"
+			textFill="#c5c6c7">
+			<font>
+				<Font name="Algerian" size="37.0" />
+			</font>
+		</Label>
+		<ComboBox fx:id="myComboBox1" layoutX="225.0" layoutY="244.0"
+			prefWidth="150.0" />
+		<ComboBox fx:id="myComboBox2" layoutX="578.0" layoutY="244.0"
+			prefWidth="150.0" />
+		<Button fx:id="myCompare" layoutX="467.0" layoutY="448.0"
+			mnemonicParsing="false" onAction="#compare"
+			onMouseEntered="#colorChange" onMouseExited="#colorNormal"
+			prefHeight="35.0" prefWidth="106.0"
+			style="-fx-background-color: #0b0c10; -fx-background-radius: 20; -fx-border-width: 2; -fx-border-color: #66fcf1; -fx-border-radius: 20;"
+			text="Compare" textFill="#d1d1d1">
+			<font>
+				<Font name="System Bold" size="14.0" />
+			</font>
+		</Button>
+		<Label layoutX="242.0" layoutY="445.0" text="Start Comparing:"
+			textFill="#67cfc1">
+			<font>
+				<Font size="24.0" />
+			</font>
+		</Label>
+		<Label layoutX="26.0" layoutY="44.0" text="Innov"
+			textFill="#67cfc1">
+			<font>
+				<Font name="Yu Gothic Bold" size="36.0" />
+			</font>
+		</Label>
+		<Label layoutX="120.0" layoutY="32.0" prefHeight="54.0"
+			prefWidth="22.0" text="X" textFill="#c5c6c7">
+			<font>
+				<Font size="48.0" />
+			</font>
+		</Label>
+	</children>
+</AnchorPane>

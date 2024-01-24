@@ -1,0 +1,20 @@
+Name	 : Patel Maiitra Nischalkumar
+PRN	 : 8022053698
+Seat No. : 386134
+
+Name	 : Solanki Yash Vikram 
+PRN	 : 8022053512
+Seat No. : 386153
+
+Name	 : Patel Khushi Sanjivbhai
+PRN	 : 8022056539
+Seat No. : 386133
+
+Name	 : Pandya Bhargavi Hitesh
+PRN	 : 8022003900
+Seat No. : 386124
+
+P.S. -
+ Main.java is the first file.
+ Sql Connector jar and Javafx related libraries would be required to run the programs.
+ Changes should be made in the Connection according to your database created.

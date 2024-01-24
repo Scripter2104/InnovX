@@ -1,0 +1,96 @@
+/* JavaFX CSS - Leave this comment until you have at least create one rule which uses -fx-Property */
+.button1{
+	 -fx-background-color: #0b0c10;
+	 -fx-background-radius: 50;
+	 -fx-border-color: #66fcf1;
+	 -fx-border-radius: 50;
+	 -fx-border-width: 2;
+}
+
+.button1:hover{
+  -fx-background-color: white;
+  -fx-border-width: 2;
+  -fx-border-color: transparent;
+  -fx-text-fill: #0b0c10;
+}
+
+.button2{
+	-fx-background-color: linear-gradient(to bottom right, #45a29e, #66fcf1);
+	-fx-background-radius: 50;
+}
+
+.button2:hover {
+  -fx-background-color: white;
+  -fx-text-fill: black;
+}
+
+.dialog-pane {
+    -fx-background-color: black;
+}
+
+.dialog-pane .label {
+    -fx-text-fill: white;
+}
+
+.dialog-pane:header .header-panel {
+    -fx-background-color: #1f2833;
+}
+
+.dialog-pane:header .header-panel .label {
+    -fx-font-family: Verdana, sans-serif;
+    -fx-font-size: 2em;
+}
+
+
+.dialog-pane > .button-bar .button{
+	-fx-background-radius: 50; 
+}
+
+/*----------------------------------------------*/
+.hbox-style 
+{
+	-fx-border-color: #66FCF1;
+	-fx-border-width: 2;
+	-fx-border-radius: 20;
+	-fx-background-radius: 20;
+	-fx-background-color: #1F2833;
+	-fx-spacing: 0;
+	-fx-padding: 5;
+}
+.image-style
+{
+	-fx-padding: 5; 
+}
+.text1-style
+{
+	-fx-fill: #C5C6C7;
+	-fx-spacing: 0;
+	-fx-font-size: 15;
+	-fx-font-family: "Yu Gothic UI Semibold";
+}
+.mrp-style
+{
+	-fx-text-fill: #45A29E;
+}
+.button-style
+{
+	-fx-background-color: "black";
+	-fx-background-radius: 20;
+	-fx-border-color: #45a29e;
+	-fx-border-width: 3;
+	-fx-border-radius: 20;
+	-fx-text-fill: #c5c6c7;
+}
+.button-change-style
+{
+	-fx-background-color: #45a29e;
+	-fx-background-radius: 20;
+	-fx-border-color: #45a29e;
+	-fx-border-width: 3;
+	-fx-border-radius: 20;	
+	-fx-text-fill: "black";
+}
+.hyperlink-no-underline
+{
+	-fx-underline: false;
+}

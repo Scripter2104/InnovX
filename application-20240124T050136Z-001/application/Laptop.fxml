@@ -1,0 +1,396 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity"
+	minHeight="-Infinity" minWidth="-Infinity" prefHeight="670.0"
+	prefWidth="801.0" style="-fx-background-color: #0b0c10;"
+	xmlns="http://javafx.com/javafx/20.0.1"
+	xmlns:fx="http://javafx.com/fxml/1"
+	fx:controller="application.Controller">
+	<children>
+		<ScrollPane layoutX="163.0" layoutY="113.0"
+			prefHeight="558.0" prefWidth="310.0"
+			style="-fx-background-color: #0b0c10;">
+			<content>
+				<AnchorPane prefHeight="650.0" prefWidth="310.0"
+					style="-fx-background-color: #0b0c10;">
+					<children>
+						<Label layoutX="37.0" layoutY="14.0" prefHeight="18.0"
+							prefWidth="200.0" text="Product 1" textAlignment="CENTER"
+							textFill="#c5c6c7">
+							<font>
+								<Font name="Algerian" size="37.0" />
+							</font>
+						</Label>
+						<ComboBox fx:id="combobox1" layoutX="60.0" layoutY="67.0"
+							onAction="#choice" prefWidth="150.0" promptText="select laptop" />
+						<ImageView fx:id="imageview1" fitHeight="139.0"
+							fitWidth="248.0" layoutX="16.0" layoutY="104.0"
+							pickOnBounds="true" preserveRatio="true" style="-fx-opacity: 1;" />
+						<Label fx:id="modelLabel1" layoutX="17.0" layoutY="251.0"
+							text="-&gt; Mackbokk Air M1 Chip" textFill="#66fcf1">
+							<font>
+								<Font name="Britannic Bold" size="18.0" />
+							</font>
+						</Label>
+						<Label alignment="CENTER" layoutX="65.0" layoutY="321.0"
+							prefHeight="18.0" prefWidth="135.0" text=" Specifications"
+							textFill="#c5c6c7">
+							<font>
+								<Font name="System Bold" size="18.0" />
+							</font>
+						</Label>
+						<Line endX="12.100021362304688" layoutX="178.0"
+							layoutY="348.0" startX="-100.0" />
+						<Label fx:id="myProcessor" layoutX="17.0" layoutY="363.0"
+							text="Processor:" textFill="#45a29e" wrapText="true">
+							<font>
+								<Font name="Britannic Bold" size="14.0" />
+							</font>
+						</Label>
+						<Label fx:id="myGpu" layoutX="17.0" layoutY="390.0"
+							text="GPU:" textFill="#45a29e" wrapText="true">
+							<font>
+								<Font name="Britannic Bold" size="14.0" />
+							</font>
+						</Label>
+						<Label fx:id="myMemory" layoutX="17.0" layoutY="417.0"
+							text="Memory: " textFill="#45a29e" wrapText="true">
+							<font>
+								<Font name="Britannic Bold" size="14.0" />
+							</font>
+						</Label>
+						<Label fx:id="myStorage" layoutX="17.0" layoutY="444.0"
+							text="Storage:" textFill="#45a29e" wrapText="true">
+							<font>
+								<Font name="Britannic Bold" size="14.0" />
+							</font>
+						</Label>
+						<Label fx:id="myOs" layoutX="17.0" layoutY="471.0"
+							text="Operating Sys:" textFill="#45a29e" wrapText="true">
+							<font>
+								<Font name="Britannic Bold" size="14.0" />
+							</font>
+						</Label>
+						<Label fx:id="myResolution" layoutX="17.0" layoutY="498.0"
+							text="Resolution:" textFill="#45a29e" wrapText="true">
+							<font>
+								<Font name="Britannic Bold" size="14.0" />
+							</font>
+						</Label>
+						<Label fx:id="myPrice1" layoutX="17.0" layoutY="276.0"
+							text="-&gt; Price 1300$" textFill="#66fcf1">
+							<font>
+								<Font name="Britannic Bold" size="18.0" />
+							</font>
+						</Label>
+						<Label fx:id="myDimension" layoutX="17.0" layoutY="525.0"
+							text="Dimensions:" textFill="#45a29e" wrapText="true">
+							<font>
+								<Font name="Britannic Bold" size="14.0" />
+							</font>
+						</Label>
+						<Label fx:id="myWeight" layoutX="17.0" layoutY="552.0"
+							prefHeight="16.0" prefWidth="276.0" text="Weight:"
+							textFill="#45a29e" wrapText="true">
+							<font>
+								<Font name="Britannic Bold" size="14.0" />
+							</font>
+						</Label>
+						<Label fx:id="myRatio" layoutX="17.0" layoutY="579.0"
+							text="Ratio:" textFill="#45a29e" wrapText="true">
+							<font>
+								<Font name="Britannic Bold" size="14.0" />
+							</font>
+						</Label>
+						<Label fx:id="myCamera" layoutX="17.0" layoutY="606.0"
+							text="Camera:" textFill="#45a29e" wrapText="true">
+							<font>
+								<Font name="Britannic Bold" size="14.0" />
+							</font>
+						</Label>
+						<Label fx:id="mySize" layoutX="17.0" layoutY="660.0"
+							text="Size:" textFill="#45a29e" wrapText="true">
+							<font>
+								<Font name="Britannic Bold" size="14.0" />
+							</font>
+						</Label>
+						<Label fx:id="myRefreshRate" layoutX="17.0" layoutY="633.0"
+							text="Refresh Rate:" textFill="#45a29e" wrapText="true">
+							<font>
+								<Font name="Britannic Bold" size="14.0" />
+							</font>
+						</Label>
+					</children>
+				</AnchorPane>
+			</content>
+		</ScrollPane>
+		<ScrollPane layoutX="483.0" layoutY="113.0"
+			prefHeight="558.0" prefWidth="318.0"
+			style="-fx-background-color: #0b0c10;">
+			<content>
+				<AnchorPane prefHeight="650.0" prefWidth="310.0"
+					style="-fx-background-color: #0b0c10;">
+					<children>
+						<Label layoutX="37.0" layoutY="14.0" prefHeight="18.0"
+							prefWidth="200.0" text="Product 2" textAlignment="CENTER"
+							textFill="#c5c6c7">
+							<font>
+								<Font name="Algerian" size="37.0" />
+							</font>
+						</Label>
+						<ComboBox fx:id="combobox2" layoutX="56.0" layoutY="67.0"
+							onAction="#choice" prefWidth="150.0" promptText="select laptop" />
+						<ImageView fx:id="imageview2" fitHeight="131.0"
+							fitWidth="214.0" layoutX="42.0" layoutY="104.0"
+							pickOnBounds="true" preserveRatio="true" smooth="false"
+							style="-fx-opacity: 1;" />
+						<Label fx:id="modelLabel2" layoutX="17.0" layoutY="251.0"
+							text="-&gt; Dell Inspiron 1530" textFill="#66fcf1">
+							<font>
+								<Font name="Britannic Bold" size="18.0" />
+							</font>
+						</Label>
+						<Label alignment="CENTER" layoutX="69.0" layoutY="317.0"
+							prefHeight="18.0" prefWidth="135.0" text=" Specifications"
+							textFill="#c5c6c7">
+							<font>
+								<Font name="System Bold" size="18.0" />
+							</font>
+						</Label>
+						<Line endX="12.100021362304688" layoutX="181.0"
+							layoutY="344.0" startX="-100.0" />
+						<Label fx:id="myProcessor2" layoutX="17.0" layoutY="363.0"
+							text="Processor:" textFill="#45a29e" wrapText="true">
+							<font>
+								<Font name="Britannic Bold" size="14.0" />
+							</font>
+						</Label>
+						<Label fx:id="myGpu2" layoutX="17.0" layoutY="390.0"
+							text="GPU:" textFill="#45a29e" wrapText="true">
+							<font>
+								<Font name="Britannic Bold" size="14.0" />
+							</font>
+						</Label>
+						<Label fx:id="myMemory2" layoutX="17.0" layoutY="417.0"
+							text="Memory: " textFill="#45a29e" wrapText="true">
+							<font>
+								<Font name="Britannic Bold" size="14.0" />
+							</font>
+						</Label>
+						<Label fx:id="myStorage2" layoutX="17.0" layoutY="444.0"
+							prefHeight="16.0" prefWidth="288.0" text="Storage:  "
+							textFill="#45a29e" wrapText="true">
+							<font>
+								<Font name="Britannic Bold" size="14.0" />
+							</font>
+						</Label>
+						<Label fx:id="myOs2" layoutX="17.0" layoutY="471.0"
+							text="Operating Sys:" textFill="#45a29e" wrapText="true">
+							<font>
+								<Font name="Britannic Bold" size="14.0" />
+							</font>
+						</Label>
+						<Label fx:id="myResolution2" layoutX="17.0" layoutY="498.0"
+							prefHeight="16.0" prefWidth="220.0" text="Resolution:"
+							textFill="#45a29e" wrapText="true">
+							<font>
+								<Font name="Britannic Bold" size="14.0" />
+							</font>
+						</Label>
+						<Label fx:id="myPrice2" layoutX="17.0" layoutY="276.0"
+							text="-&gt; Price  960$" textFill="#66fcf1">
+							<font>
+								<Font name="Britannic Bold" size="18.0" />
+							</font>
+						</Label>
+						<Label fx:id="myDimension2" layoutX="17.0" layoutY="525.0"
+							prefHeight="16.0" prefWidth="231.0" text="Dimensions:"
+							textFill="#45a29e" wrapText="true">
+							<font>
+								<Font name="Britannic Bold" size="14.0" />
+							</font>
+						</Label>
+						<Label fx:id="myWeight2" layoutX="17.0" layoutY="552.0"
+							prefHeight="16.0" prefWidth="245.0" text="Weight:"
+							textFill="#45a29e" wrapText="true">
+							<font>
+								<Font name="Britannic Bold" size="14.0" />
+							</font>
+						</Label>
+						<Label fx:id="myRatio2" layoutX="17.0" layoutY="579.0"
+							prefHeight="16.0" prefWidth="174.0" text="Ratio:"
+							textFill="#45a29e" wrapText="true">
+							<font>
+								<Font name="Britannic Bold" size="14.0" />
+							</font>
+						</Label>
+						<Label fx:id="myCamera2" layoutX="17.0" layoutY="606.0"
+							prefHeight="16.0" prefWidth="282.0" text="Camera:"
+							textFill="#45a29e" wrapText="true">
+							<font>
+								<Font name="Britannic Bold" size="14.0" />
+							</font>
+						</Label>
+						<Label fx:id="myRefreshRate2" layoutX="17.0" layoutY="633.0"
+							prefHeight="16.0" prefWidth="174.0" text="Refresh Rate:"
+							textFill="#45a29e" wrapText="true">
+							<font>
+								<Font name="Britannic Bold" size="14.0" />
+							</font>
+						</Label>
+						<Label fx:id="mySize2" layoutX="17.0" layoutY="660.0"
+							prefHeight="16.0" prefWidth="278.0" text="Size:"
+							textFill="#45a29e" wrapText="true">
+							<font>
+								<Font name="Britannic Bold" size="14.0" />
+							</font>
+						</Label>
+					</children>
+				</AnchorPane>
+			</content>
+		</ScrollPane>
+		<Line endX="100.0" startX="-100.0" />
+		<AnchorPane layoutX="-1.0" layoutY="113.0"
+			prefHeight="558.0" prefWidth="164.0"
+			style="-fx-background-color: #1f2833;">
+			<children>
+				<Hyperlink fx:id="reviews" focusTraversable="false"
+					layoutY="474.0" onAction="#reviewScene"
+					styleClass="hyperlink-no-underline" text="Reviews"
+					textFill="#66fcf1">
+					<font>
+						<Font name="System Bold" size="16.0" />
+					</font>
+				</Hyperlink>
+				<Hyperlink fx:id="aboutUs" focusTraversable="false"
+					layoutY="508.0" onAction="#infoAboutUs"
+					styleClass="hyperlink-no-underline" text="Info About Us:"
+					textFill="#66fcf1">
+					<font>
+						<Font name="System Bold" size="16.0" />
+					</font>
+				</Hyperlink>
+				<AnchorPane prefHeight="548.0" prefWidth="148.0"
+					style="-fx-background-color: #1f2833;">
+					<children>
+						<Hyperlink fx:id="reviews1" focusTraversable="false"
+							layoutY="474.0" onAction="#reviewScene"
+							styleClass="hyperlink-no-underline" text="Reviews"
+							textFill="#66fcf1">
+							<font>
+								<Font name="System Bold" size="16.0" />
+							</font>
+						</Hyperlink>
+						<Hyperlink fx:id="aboutUs1" focusTraversable="false"
+							layoutY="508.0" onAction="#infoAboutUs"
+							styleClass="hyperlink-no-underline" text="Info About Us"
+							textFill="#66fcf1">
+							<font>
+								<Font name="System Bold" size="16.0" />
+							</font>
+						</Hyperlink>
+						<ImageView fitHeight="44.0" fitWidth="38.0"
+							layoutX="6.0" layoutY="46.0" pickOnBounds="true"
+							preserveRatio="true">
+							<image>
+								<Image url="@Images/home-removebg-preview.png" />
+							</image>
+						</ImageView>
+						<Hyperlink fx:id="home" focusTraversable="false"
+							layoutX="58.0" layoutY="48.0" onAction="#homeScene"
+							prefHeight="35.0" prefWidth="70.0" text="Home" textFill="#c5c6c7">
+							<font>
+								<Font size="20.0" />
+							</font>
+						</Hyperlink>
+						<ImageView fitHeight="44.0" fitWidth="35.0"
+							layoutX="7.0" layoutY="130.0" pickOnBounds="true"
+							preserveRatio="true">
+							<image>
+								<Image url="@Images/add-user.png" />
+							</image>
+						</ImageView>
+						<Hyperlink fx:id="add" focusTraversable="false"
+							layoutX="58.0" layoutY="134.0" onAction="#addAccount"
+							prefHeight="35.0" prefWidth="70.0" text="Add " textFill="#c5c6c7">
+							<font>
+								<Font size="20.0" />
+							</font>
+						</Hyperlink>
+						<ImageView fitHeight="44.0" fitWidth="35.0"
+							layoutX="7.0" layoutY="214.0" pickOnBounds="true"
+							preserveRatio="true">
+							<image>
+								<Image url="@Images/user.png" />
+							</image>
+						</ImageView>
+						<Hyperlink fx:id="login" focusTraversable="false"
+							layoutX="58.0" layoutY="217.0" onAction="#loginScene"
+							prefHeight="35.0" prefWidth="70.0" text="Login"
+							textFill="#c5c6c7">
+							<font>
+								<Font size="20.0" />
+							</font>
+						</Hyperlink>
+						<ImageView fitHeight="44.0" fitWidth="35.0"
+							layoutX="12.0" layoutY="301.0" pickOnBounds="true"
+							preserveRatio="true">
+							<image>
+								<Image url="@Images/logout%20-%20Copy.png" />
+							</image>
+						</ImageView>
+						<Hyperlink fx:id="logout" focusTraversable="false"
+							layoutX="58.0" layoutY="300.0" onAction="#mainScene"
+							prefHeight="38.0" prefWidth="78.0" text="Logout"
+							textFill="#c5c6c7">
+							<font>
+								<Font size="20.0" />
+							</font>
+						</Hyperlink>
+					</children>
+				</AnchorPane>
+			</children>
+		</AnchorPane>
+		<Label layoutX="26.0" layoutY="36.0" text="Innov"
+			textFill="#67cfc1">
+			<font>
+				<Font name="Yu Gothic Bold" size="36.0" />
+			</font>
+		</Label>
+		<Label layoutX="120.0" layoutY="24.0" prefHeight="54.0"
+			prefWidth="22.0" text="X" textFill="#c5c6c7">
+			<font>
+				<Font size="48.0" />
+			</font>
+		</Label>
+		<ImageView fitHeight="120.0" fitWidth="452.0"
+			layoutX="163.0" pickOnBounds="true" preserveRatio="true">
+			<image>
+				<Image url="@Images/design.png" />
+			</image>
+		</ImageView>
+		<ImageView fitHeight="113.0" fitWidth="172.0"
+			layoutX="615.0" layoutY="1.0" pickOnBounds="true"
+			preserveRatio="true">
+			<image>
+				<Image url="@Images/Screenshot%202023-10-21%20110547.png" />
+			</image>
+		</ImageView>
+		<ImageView fitHeight="113.0" fitWidth="59.0" layoutX="755.0"
+			layoutY="1.0" pickOnBounds="true" preserveRatio="true">
+			<image>
+				<Image url="@Images/Screenshot%202023-10-21%20111148.png" />
+			</image>
+		</ImageView>
+	</children>
+</AnchorPane>

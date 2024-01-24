@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.TextFlow?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity"
+	minHeight="-Infinity" minWidth="-Infinity" prefHeight="670.0"
+	prefWidth="800.0" style="-fx-background-color: #0b0c10;"
+	xmlns="http://javafx.com/javafx/20.0.1"
+	xmlns:fx="http://javafx.com/fxml/1"
+	fx:controller="application.InfoController">
+	<children>
+		<AnchorPane layoutY="122.0" prefHeight="548.0"
+			prefWidth="148.0" style="-fx-background-color: #1f2833;">
+			<children>
+				<Hyperlink fx:id="reviews" focusTraversable="false"
+					layoutY="514.0" onAction="#reviewScene"
+					styleClass="hyperlink-no-underline" text="Reviews"
+					textFill="#66fcf1">
+					<font>
+						<Font name="System Bold" size="16.0" />
+					</font>
+				</Hyperlink>
+				<ImageView fitHeight="44.0" fitWidth="38.0" layoutX="6.0"
+					layoutY="46.0" pickOnBounds="true" preserveRatio="true">
+					<image>
+						<Image url="@Images/home-removebg-preview.png" />
+					</image>
+				</ImageView>
+				<Hyperlink fx:id="home" focusTraversable="false"
+					layoutX="58.0" layoutY="48.0" onAction="#homeScene"
+					prefHeight="35.0" prefWidth="70.0" text="Home" textFill="#c5c6c7">
+					<font>
+						<Font size="20.0" />
+					</font>
+				</Hyperlink>
+				<ImageView fitHeight="44.0" fitWidth="35.0" layoutX="7.0"
+					layoutY="130.0" pickOnBounds="true" preserveRatio="true">
+					<image>
+						<Image url="@Images/add-user.png" />
+					</image>
+				</ImageView>
+				<Hyperlink fx:id="add" focusTraversable="false"
+					layoutX="58.0" layoutY="134.0" onAction="#addAccount"
+					prefHeight="35.0" prefWidth="70.0" text="Add " textFill="#c5c6c7">
+					<font>
+						<Font size="20.0" />
+					</font>
+				</Hyperlink>
+				<ImageView fitHeight="44.0" fitWidth="35.0" layoutX="7.0"
+					layoutY="214.0" pickOnBounds="true" preserveRatio="true">
+					<image>
+						<Image url="@Images/user.png" />
+					</image>
+				</ImageView>
+				<Hyperlink fx:id="login" focusTraversable="false"
+					layoutX="58.0" layoutY="217.0" onAction="#loginScene"
+					prefHeight="35.0" prefWidth="70.0" text="Login" textFill="#c5c6c7">
+					<font>
+						<Font size="20.0" />
+					</font>
+				</Hyperlink>
+				<ImageView fitHeight="44.0" fitWidth="35.0" layoutX="12.0"
+					layoutY="301.0" pickOnBounds="true" preserveRatio="true">
+					<image>
+						<Image url="@Images/logout%20-%20Copy.png" />
+					</image>
+				</ImageView>
+				<Hyperlink fx:id="logout" focusTraversable="false"
+					layoutX="58.0" layoutY="300.0" onAction="#mainScene"
+					prefHeight="38.0" prefWidth="78.0" text="Logout" textFill="#c5c6c7">
+					<font>
+						<Font size="20.0" />
+					</font>
+				</Hyperlink>
+			</children>
+		</AnchorPane>
+		<Label layoutX="26.0" layoutY="44.0" text="Innov"
+			textFill="#67cfc1">
+			<font>
+				<Font name="Yu Gothic Bold" size="36.0" />
+			</font>
+		</Label>
+		<Label layoutX="120.0" layoutY="32.0" prefHeight="54.0"
+			prefWidth="22.0" text="X" textFill="#c5c6c7">
+			<font>
+				<Font size="48.0" />
+			</font>
+		</Label>
+		<Label layoutX="229.0" layoutY="44.0"
+			text="About Our Developers" textFill="#12ffeb">
+			<font>
+				<Font name="Verdana Bold" size="36.0" />
+			</font>
+		</Label>
+		<ScrollPane layoutX="148.0" layoutY="121.0"
+			prefHeight="548.0" prefWidth="651.0"
+			style="-fx-background-color: #0b0c10;">
+			<content>
+				<AnchorPane prefHeight="676.0" prefWidth="638.0"
+					style="-fx-background-color: #0b0c10;">
+					<children>
+						<Line endX="12.100021362304688" layoutX="178.0"
+							layoutY="348.0" startX="-100.0" />
+						<Label layoutX="213.0" layoutY="39.0" prefHeight="35.0"
+							prefWidth="174.0" text="Our Team" textFill="#c5c6c7">
+							<font>
+								<Font size="36.0" />
+							</font>
+						</Label>
+						<ImageView fitHeight="164.0" fitWidth="420.0"
+							layoutX="108.0" layoutY="123.0" pickOnBounds="true"
+							preserveRatio="true">
+							<image>
+								<Image url="@../../../../Desktop/design.png" />
+							</image>
+						</ImageView>
+						<TextFlow fx:id="myText" layoutX="5.0" layoutY="321.0"
+							prefHeight="182.0" prefWidth="628.0" />
+					</children>
+				</AnchorPane>
+			</content>
+		</ScrollPane>
+	</children>
+</AnchorPane>

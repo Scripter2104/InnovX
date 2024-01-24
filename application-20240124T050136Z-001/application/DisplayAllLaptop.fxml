@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity"
+	minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0"
+	prefWidth="650.0" style="-fx-background-color: black;"
+	xmlns="http://javafx.com/javafx/20.0.1"
+	xmlns:fx="http://javafx.com/fxml/1"
+	fx:controller="application.DisplayPage">
+	<children>
+		<TextField fx:id="text_Search" cache="true"
+			cacheHint="SPEED" layoutX="159.0" layoutY="30.0"
+			onAction="#searchContent" prefHeight="29.0" prefWidth="477.0"
+			promptText="   Search item"
+			style="-fx-border-radius: 20; -fx-background-radius: 20; -fx-border-width: 2; -fx-border-color: #66fcf1;"
+			AnchorPane.leftAnchor="159.0"
+			AnchorPane.rightAnchor="14.333333333333258" />
+		<ImageView fx:id="search" fitHeight="19.0" fitWidth="15.0"
+			layoutX="607.0" layoutY="37.0" onMouseClicked="#searchContent"
+			pickOnBounds="true" preserveRatio="true">
+			<image>
+				<Image url="@Images/search.png" />
+			</image>
+		</ImageView>
+		<ImageView fx:id="apple" accessibleRole="BUTTON"
+			fitHeight="105.0" fitWidth="108.0" layoutX="239.0" layoutY="152.0"
+			onMouseClicked="#showApple" onMouseEntered="#on_Enter_In_Apple"
+			onMouseExited="#on_Exit_From_Apple" pickOnBounds="true"
+			preserveRatio="true">
+			<image>
+				<Image url="@Images/appleLogo.jpg" />
+			</image>
+		</ImageView>
+		<Label alignment="CENTER" contentDisplay="CENTER"
+			layoutX="419.0" layoutY="255.0" prefHeight="26.0" prefWidth="69.0"
+			style="-fx-text-fill: aliceblue;" />
+		<ImageView fx:id="dell" fitHeight="106.0" fitWidth="131.0"
+			layoutX="222.0" layoutY="344.0" onMouseEntered="#on_Enter_In_Dell"
+			onMouseExited="#on_Exit_From_Dell" onMousePressed="#showDell"
+			pickOnBounds="true" preserveRatio="true">
+			<image>
+				<Image url="@Images/dellLogo.png" />
+			</image>
+		</ImageView>
+		<ImageView fx:id="hp" fitHeight="120.0" fitWidth="131.0"
+			layoutX="419.0" layoutY="152.0" onMouseEntered="#on_Enter_In_Hp"
+			onMouseExited="#on_Exit_From_Hp" onMousePressed="#showHp"
+			pickOnBounds="true" preserveRatio="true">
+			<image>
+				<Image url="@Images/hpLogo.png" />
+			</image>
+		</ImageView>
+		<Label fx:id="dell_Label" alignment="CENTER"
+			contentDisplay="CENTER" layoutX="252.0" layoutY="457.0"
+			prefHeight="26.0" prefWidth="69.0" style="-fx-text-fill: aliceblue;" />
+		<Label fx:id="hp_Label" alignment="CENTER"
+			contentDisplay="CENTER" layoutX="450.0" layoutY="268.0"
+			onMouseEntered="#on_Enter_In_Dell" onMouseExited="#on_Exit_From_Dell"
+			prefHeight="26.0" prefWidth="69.0" style="-fx-text-fill: aliceblue;" />
+		<Label fx:id="apple_Label" alignment="CENTER"
+			contentDisplay="CENTER" layoutX="253.0" layoutY="268.0"
+			onMouseEntered="#on_Enter_In_Apple"
+			onMouseExited="#on_Exit_From_Apple" prefHeight="26.0"
+			prefWidth="69.0" style="-fx-text-fill: aliceblue;" />
+		<ImageView fx:id="asus" fitHeight="105.0" fitWidth="150.0"
+			layoutX="410.0" layoutY="358.0" onMouseEntered="#on_Enter_In_Asus"
+			onMouseExited="#on_Exit_From_Asus" onMousePressed="#showAsus"
+			pickOnBounds="true" preserveRatio="true">
+			<image>
+				<Image url="@Images/asusLogo.png" />
+			</image>
+		</ImageView>
+		<Label fx:id="asus_Label" alignment="CENTER"
+			contentDisplay="CENTER" layoutX="453.0" layoutY="457.0"
+			prefHeight="26.0" prefWidth="69.0" style="-fx-text-fill: aliceblue;" />
+		<Label alignment="CENTER_RIGHT" layoutY="25.0" prefHeight="39.0"
+			prefWidth="98.0" text="Innov" textFill="#66fcf1">
+			<font>
+				<Font name="Yu Gothic UI Semibold" size="27.0" />
+			</font>
+		</Label>
+		<Label layoutX="98.0" layoutY="14.0" prefHeight="61.0"
+			prefWidth="28.0" text="X" textFill="#c5c6c7">
+			<font>
+				<Font name="Yu Gothic UI Semibold" size="33.0" />
+			</font>
+		</Label>
+		<VBox layoutX="24.0" layoutY="101.0" prefHeight="518.0"
+			prefWidth="149.0" style="-fx-background-color: #1f2833;"
+			AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0">
+			<children>
+				<VBox prefHeight="161.0" prefWidth="126.0"
+					style="-fx-background-color: #33334d;">
+					<children>
+						<Label alignment="CENTER" prefHeight="37.0"
+							prefWidth="150.0" style="-fx-background-color: #1f2833;"
+							text="My Account" textFill="#e7e4e9">
+							<font>
+								<Font size="16.0" />
+							</font>
+						</Label>
+						<HBox alignment="CENTER_LEFT" onMouseClicked="#myDetails"
+							prefHeight="41.0" prefWidth="126.0"
+							style="-fx-background-color: white;">
+							<children>
+								<ImageView fitHeight="35.0" fitWidth="35.0"
+									pickOnBounds="true" preserveRatio="true">
+									<image>
+										<Image url="@Images/user.png" />
+									</image>
+								</ImageView>
+								<Hyperlink alignment="CENTER" contentDisplay="CENTER"
+									focusTraversable="false" onMouseClicked="#myDetails"
+									prefHeight="42.0" prefWidth="100.0"
+									style="-fx-text-fill: black;"
+									styleClass="hyperlink-no-underline" text="My Details" />
+							</children>
+						</HBox>
+						<HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="47.0"
+							onMouseClicked="#addAccount" opacity="0.75" prefHeight="41.0"
+							prefWidth="126.0" style="-fx-background-color: white;">
+							<children>
+								<ImageView fitHeight="36.0" fitWidth="36.0"
+									pickOnBounds="true" preserveRatio="true">
+									<image>
+										<Image url="@Images/add-user.png" />
+									</image>
+								</ImageView>
+								<Hyperlink alignment="CENTER" contentDisplay="CENTER"
+									focusTraversable="false" onMouseClicked="#addAccount"
+									prefHeight="42.0" prefWidth="108.0"
+									style="-fx-text-fill: black;"
+									styleClass="hyperlink-no-underline" text="Add Account" />
+							</children>
+						</HBox>
+						<HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="47.0"
+							onMouseClicked="#loginScene" prefHeight="41.0" prefWidth="126.0"
+							style="-fx-background-color: white;">
+							<children>
+								<ImageView fitHeight="38.0" fitWidth="62.0"
+									pickOnBounds="true" preserveRatio="true">
+									<image>
+										<Image url="@Images/logout2.png" />
+									</image>
+									<HBox.margin>
+										<Insets left="3.0" />
+									</HBox.margin>
+								</ImageView>
+								<Hyperlink alignment="CENTER" contentDisplay="CENTER"
+									focusTraversable="false" onMouseClicked="#loginScene"
+									prefHeight="41.0" prefWidth="78.0"
+									style="-fx-text-fill: black;"
+									styleClass="hyperlink-no-underline" text="Log Out">
+									<padding>
+										<Insets left="-3.0" />
+									</padding>
+								</Hyperlink>
+							</children>
+						</HBox>
+					</children>
+				</VBox>
+				<VBox layoutX="10.0" layoutY="10.0" prefHeight="161.0"
+					prefWidth="126.0" style="-fx-background-color: #33334d;">
+					<children>
+						<Label alignment="CENTER" prefHeight="37.0"
+							prefWidth="150.0" style="-fx-background-color: #1f2833;"
+							text="My Cart" textFill="#e7e4e9">
+							<font>
+								<Font size="16.0" />
+							</font>
+						</Label>
+						<HBox alignment="CENTER_LEFT" onMousePressed="#viewCart"
+							prefHeight="41.0" prefWidth="126.0"
+							style="-fx-background-color: white;">
+							<children>
+								<ImageView fitHeight="40.0" fitWidth="42.0"
+									pickOnBounds="true" preserveRatio="true">
+									<image>
+										<Image url="@Images/icons8-cart.png" />
+									</image>
+								</ImageView>
+								<Hyperlink alignment="CENTER" contentDisplay="CENTER"
+									focusTraversable="false" onMouseClicked="#viewCart"
+									prefHeight="42.0" prefWidth="78.0"
+									style="-fx-text-fill: black;"
+									styleClass="hyperlink-no-underline" text="View Cart" />
+							</children>
+						</HBox>
+						<HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="47.0"
+							onMouseClicked="#removeCart" opacity="0.75" prefHeight="41.0"
+							prefWidth="126.0" style="-fx-background-color: white;">
+							<children>
+								<ImageView fitHeight="41.0" fitWidth="38.0"
+									pickOnBounds="true" preserveRatio="true">
+									<image>
+										<Image url="@Images/icons8-clear-shopping-cart.png" />
+									</image>
+								</ImageView>
+								<Hyperlink alignment="CENTER" contentDisplay="CENTER"
+									focusTraversable="false" onMouseClicked="#removeCart"
+									prefHeight="42.0" prefWidth="98.0"
+									style="-fx-text-fill: black;"
+									styleClass="hyperlink-no-underline" text="Remove Cart" />
+							</children>
+						</HBox>
+						<HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="47.0"
+							onMouseClicked="#viewCart" prefHeight="41.0" prefWidth="126.0"
+							style="-fx-background-color: white;">
+							<children>
+								<ImageView fitHeight="41.0" fitWidth="38.0"
+									pickOnBounds="true" preserveRatio="true">
+									<image>
+										<Image url="@Images/icons8-checkout.png" />
+									</image>
+								</ImageView>
+								<Hyperlink alignment="CENTER" contentDisplay="CENTER"
+									focusTraversable="false" onMouseClicked="#viewCart"
+									prefHeight="41.0" prefWidth="85.0"
+									style="-fx-text-fill: black;"
+									styleClass="hyperlink-no-underline" text="Check Out" />
+							</children>
+						</HBox>
+					</children>
+				</VBox>
+				<VBox alignment="BOTTOM_LEFT" prefHeight="167.0"
+					prefWidth="99.0">
+					<children>
+						<Hyperlink alignment="CENTER" focusTraversable="false"
+							layoutX="55.0" layoutY="153.0" onAction="#reviewScene"
+							styleClass="hyperlink-no-underline" text="Reviews"
+							textFill="#66fcf1">
+							<font>
+								<Font name="System Bold" size="16.0" />
+							</font>
+						</Hyperlink>
+						<Hyperlink alignment="CENTER" focusTraversable="false"
+							layoutX="10.0" layoutY="144.0" onAction="#infoAboutUs"
+							styleClass="hyperlink-no-underline" text="Info about us"
+							textFill="#66fcf1">
+							<font>
+								<Font name="System Bold" size="16.0" />
+							</font>
+						</Hyperlink>
+					</children>
+					<VBox.margin>
+						<Insets left="5.0" />
+					</VBox.margin>
+				</VBox>
+			</children>
+		</VBox>
+	</children>
+</AnchorPane>
